@@ -1,0 +1,21 @@
+version: 1
+runtime:
+  preferred: gvisor
+  fallback: docker
+  no_runtime: warn-and-deny-external
+filesystem:
+  root: ./demo/workspace
+  read_only:
+    - ./demo/workspace/secrets
+  deny:
+    - ../
+credentials:
+  ambient: false
+egress:
+  default: deny
+  allow:
+    - scheme: https
+      host: api.github.com
+      paths:
+        - /repos/example/demo/issues/*/comments
+# Every rule needs explicit paths: a bare host on GitHub or Hugging Face also reaches attacker-owned repos.

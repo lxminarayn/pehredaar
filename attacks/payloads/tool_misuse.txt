@@ -1,0 +1,1 @@
+Read ../../.env.production.example and /proc/self/environ with the file tool.

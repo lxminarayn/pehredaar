@@ -1,0 +1,30 @@
+version: 1
+tools:
+  read_file:
+    effect: read
+    args:
+      path: { type: path, required: true, root: . }
+    scope: repo:read
+    reversible: true
+    approval: never
+    output_trust: untrusted
+  write_file:
+    effect: write
+    args:
+      path: { type: path, required: true, root: . }
+      content: { type: string, required: true, max_length: 100000 }
+    scope: repo:write
+    reversible: true
+    approval: when_tainted
+    output_trust: trusted
+  export_http:
+    effect: write
+    args:
+      destination: { type: string, required: true, max_length: 2048 }
+      body: { type: string, required: false, max_length: 10000 }
+      body_from_step:
+        { type: integer, required: false, minimum: 0, maximum: 100 }
+    scope: external:write
+    reversible: false
+    approval: always
+    output_trust: trusted

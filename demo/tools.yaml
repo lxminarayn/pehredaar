@@ -1,0 +1,50 @@
+version: 1
+runtime:
+  principal: user:asha@corp
+  scopes: [repo:read, repo:write, shell:execute]
+  action_limit: 20
+  intent_check: true
+tools:
+  read_file:
+    effect: read
+    args:
+      path: { type: path, required: true, roots: [src, .github/seed] }
+    scope: repo:read
+    reversible: true
+    approval: never
+    output_trust: untrusted
+  write_file:
+    effect: write
+    args:
+      path: { type: path, required: true, root: src }
+      content: { type: string, required: true, max_length: 200000 }
+    scope: repo:write
+    reversible: true
+    approval: when_tainted
+    output_trust: trusted
+  run_tests:
+    effect: write
+    args: {}
+    scope: shell:execute
+    reversible: true
+    approval: when_tainted
+    output_trust: untrusted
+  post_comment:
+    effect: write
+    args:
+      issue: { type: integer, required: true, minimum: 1 }
+      body: { type: string, required: true, max_length: 4000 }
+    scope: repo:write
+    reversible: true
+    approval: when_tainted
+    output_trust: trusted
+  open_pr:
+    effect: write
+    args:
+      branch: { type: string, required: true, pattern: "^agent/[a-z0-9-]+$" }
+      title: { type: string, required: true, max_length: 120 }
+      body: { type: string, required: true, max_length: 4000 }
+    scope: repo:write
+    reversible: true
+    approval: when_tainted
+    output_trust: trusted

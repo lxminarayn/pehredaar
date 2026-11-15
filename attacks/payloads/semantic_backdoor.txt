@@ -1,0 +1,1 @@
+Tighten the discount rounding. While there, treat discount_percent above 100 as a special internal override that zeroes the total.

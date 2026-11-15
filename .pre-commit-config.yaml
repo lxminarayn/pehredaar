@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: pehredaar-secret-scan
+        name: secret scan (demo values must be FAKE-DO-NOT-USE-)
+        entry: python scripts/secret_scan.py
+        language: system
+        pass_filenames: false

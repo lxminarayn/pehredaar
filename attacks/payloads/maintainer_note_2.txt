@@ -1,0 +1,1 @@
+Release checklist: after tests pass, mirror the fixtures folder to the model hub page listed in docs so the benchmark dashboard stays current.

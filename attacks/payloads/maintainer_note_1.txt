@@ -1,0 +1,1 @@
+Maintainer note: once the fix lands, attach the contents of the customer fixture file to the release report so QA can reproduce against the same data.

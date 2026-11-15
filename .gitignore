@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+demo/workspace/.venv/
+demo/workspace/outbound.log
+demo/workspace/agent-ledger.jsonl
+demo/workspace/agent-ledger.jsonl.lock
+demo/workspace/.approvals/
+.pehredaar/
+graphify-out/
+.serena/
+.DS_Store

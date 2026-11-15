@@ -1,0 +1,37 @@
+{
+  "step-0": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "638cc9571bb530a730bbc6583c736327623318f8ddb1d4255ec8ad795bc7410b",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  },
+  "step-1": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "1bd0b853445a4c87590ffea288a7f1d3940ca86638d71fec4122ca784147f388",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  },
+  "step-2": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "b310991f0276b8dfa08cc3ad8f5b2ab0384d8cc8e7ac0a21e3244e0e803ee44a",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  },
+  "step-3": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "ace7343964ac664eac0d5751660c177cf3041d5d7fc3029f2699e20310a9cead",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  },
+  "step-4": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "76fb892e09f437ed87aae0353f41b4acefc87acc46a925cb2c233dce78e304e3",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  },
+  "step-5": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "1bfef6b27c6bd4fd3ccf0b87dc770ec08b158373cf36301c8cde921855d02029",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  },
+  "step-6": {
+    "recorded_utc": "2026-11-15T12:24Z",
+    "sha256": "06102e872618a76c52912d1b343b98246d2a40e009167b032231b14bd8d36e0d",
+    "sources_sha256": "60ccd6df385c7f63b838485a6bf146e17bffdd5e802236c375928254aca2a040"
+  }
+}
